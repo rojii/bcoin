@@ -269,6 +269,7 @@ class CLI {
         this.log('Commands:');
         this.log('  $ block [hash/height]: View block.');
         this.log('  $ broadcast [tx-hex]: Broadcast transaction.');
+        this.log('  $ broadcast bundle withdrawal [tx-hex]: Broadcast Bundle transaction.');
         this.log('  $ coin [hash+index/address]: View coins.');
         this.log('  $ fee [target]: Estimate smart fee.');
         this.log('  $ filter [hash/height]: View filter.');
