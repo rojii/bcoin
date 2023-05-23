@@ -6,10 +6,8 @@ const Config = require('bcfg');
 const WalletClient = require('../lib/client/wallet');
 
 const ports = {
-  main: 8334,
-  testnet: 18334,
-  regtest: 48334,
-  simnet: 18558
+  main: 8274,
+  regtest: 18745
 };
 
 class CLI {
@@ -43,6 +41,7 @@ class CLI {
 
     this.client = new WalletClient({
       url: this.config.str('url'),
+      timeout: this.config.uint('timeout'),
       apiKey: this.config.str('api-key'),
       ssl: this.config.bool('ssl'),
       host: this.config.str('http-host'),
