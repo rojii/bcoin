@@ -193,7 +193,7 @@ class CLI {
     this.log(tx);
   }
 
-  async broadcastWithdrawal() {
+  async broadcastWithdrawalBundle() {
     const raw = this.config.str([0, 'tx']);
     const tx = await this.mainchain.broadcastWithdrawalBundle(raw);
 
